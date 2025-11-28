@@ -20,7 +20,7 @@
 
 | 📦 项目 | 📄 文件名 | 🐙 GitHub Release | 🚀 国内加速 (推荐) | 🔧 适用范围 |
 | :--- | :--- | :---: | :---: | :--- |
-| **ROS CNIP** | `cnip.rsc` | [**点我下载**](https://github.com/YuasKD/ROS_CNIP/releases/download/cnip/cnip.rsc) | [**点我起飞**](https://cdn.jsdelivr.net/gh/YuasKD/ROS_CNIP/releases/download/cnip/cnip.rsc) | RouterOS 导入专用 |
+| **ROS CNIP** | `cnip.rsc` | [**点我下载**](https://github.com/YuasKD/ROS_CNIP/releases/download/cnip/cnip.rsc) | [**点我起飞**](https://cdn.jsdelivr.net/gh/YuasKD/ROS_CNIP@main/cnip.rsc) | RouterOS 导入专用 |
 
 ## 📥 如何使用
 
