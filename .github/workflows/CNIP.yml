@@ -34,7 +34,7 @@ jobs:
 
           # 4. 下载并转换在线 IP 库
           # 这里使用 hackl0us 的纯净数据
-          curl -sL https://raw.githubusercontent.com/RikudouPatrickstar/GeoIP2-CN/master/cncidr.txt | \
+          curl -sL https://github.com/Hackl0us/GeoIP2-CN/raw/release/CN-ip-cidr.txt | \
           awk '{print "add list=CNIP address="$1}' >> $FILE
 
           echo "File generated successfully."
