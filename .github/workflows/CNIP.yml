@@ -44,6 +44,20 @@ jobs:
         run: |
           # 获取北京时间并写入环境变量 DATE
           echo "DATE=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+          echo "DATE_SHORT=$(TZ='Asia/Shanghai' date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Commit and Push
+        run: |
+        
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add cnip.rsc
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update CNIP list: ${{ env.DATE }}"
+            git push
+          fi
 
       - name: Upload to Release
         uses: ncipollo/release-action@v1
