@@ -4,9 +4,8 @@ on:
   schedule:
     # 北京时间每天中午 12:00 (UTC 4:00) 运行
     - cron: '0 4 * * *'
-  workflow_dispatch: # 允许手动点击按钮触发
+  workflow_dispatch:
 
-# ⚠️ 必须赋予写权限，否则无法发布 Release
 permissions:
   contents: write
 
@@ -50,9 +49,9 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           # 固定 Tag 名称，保证 ROS 下载链接不变
-          tag: list
+          tag: cnip
           name: "Auto Updated CNIP List"
-          # 引用上面生成的日期变量
+          # 引用日期变量
           body: "Updated on ${{ env.DATE }} (Beijing Time)"
           artifacts: "cnip.rsc"
           allowUpdates: true
