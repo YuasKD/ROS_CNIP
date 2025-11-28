@@ -1,0 +1,53 @@
+name: Publish CNIP to Release
+
+on:
+  schedule:
+    # 北京时间每天中午 12:00 (UTC 4:00)
+    - cron: '0 4 * * *'
+  workflow_dispatch: # 允许手动点击触发
+
+# 必须赋予写权限才能发布 Release
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Generate cnip.rsc
+        run: |
+          # 1. 定义文件名
+          FILE="cnip.rsc"
+
+          # 2. 写入头部 (移除旧列表)
+          echo "/ip firewall address-list" > $FILE
+          echo "remove [find list=CNIP]" >> $FILE
+
+          # 3. 写入私有网段 (双引号转义)
+          echo 'add list=CNIP address=192.168.0.0/16 comment="private-network"' >> $FILE
+          echo 'add list=CNIP address=10.0.0.0/8 comment="private-network"' >> $FILE
+          echo 'add list=CNIP address=172.16.0.0/12 comment="private-network"' >> $FILE
+          echo 'add list=CNIP address=100.64.0.0/10 comment="ISP-CGNAT"' >> $FILE
+
+          # 4. 下载并转换在线 IP 库
+          # 这里使用 hackl0us 的纯净数据
+          curl -sL https://raw.githubusercontent.com/RikudouPatrickstar/GeoIP2-CN/master/cncidr.txt | \
+          awk '{print "add list=CNIP address="$1}' >> $FILE
+
+          echo "File generated successfully."
+
+      - name: Upload to Release
+        uses: ncipollo/release-action@v1
+        with:
+          # 使用固定的 Tag 名称，保证下载链接不变
+          tag: list
+          name: "Auto Updated CNIP List"
+          body: "Updated on $(date +'%Y-%m-%d')"
+          artifacts: "cnip.rsc"
+          # 关键参数：允许更新同一个 Release，并覆盖旧文件
+          allowUpdates: true
+          replacesArtifacts: true
+          token: ${{ secrets.GITHUB_TOKEN }}
