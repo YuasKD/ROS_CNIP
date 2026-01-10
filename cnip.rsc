@@ -4691,6 +4691,7 @@ add list=CNIP address=134.75.107.14/31
 add list=CNIP address=134.175.0.0/16
 add list=CNIP address=137.59.59.0/24
 add list=CNIP address=137.59.88.0/22
+add list=CNIP address=138.252.72.0/23
 add list=CNIP address=139.5.56.0/21
 add list=CNIP address=139.5.80.0/22
 add list=CNIP address=139.5.92.0/22
