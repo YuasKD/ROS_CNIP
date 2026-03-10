@@ -4622,7 +4622,15 @@ add list=CNIP address=124.68.224.0/20
 add list=CNIP address=124.68.240.0/21
 add list=CNIP address=124.68.248.0/21
 add list=CNIP address=124.69.0.0/16
-add list=CNIP address=124.70.0.0/15
+add list=CNIP address=124.70.0.0/16
+add list=CNIP address=124.71.0.0/17
+add list=CNIP address=124.71.128.0/18
+add list=CNIP address=124.71.192.0/19
+add list=CNIP address=124.71.224.0/20
+add list=CNIP address=124.71.240.0/21
+add list=CNIP address=124.71.248.0/23
+add list=CNIP address=124.71.250.0/23
+add list=CNIP address=124.71.252.0/22
 add list=CNIP address=124.72.0.0/13
 add list=CNIP address=124.88.0.0/13
 add list=CNIP address=124.108.8.0/21
