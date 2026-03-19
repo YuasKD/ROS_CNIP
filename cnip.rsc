@@ -3915,14 +3915,7 @@ add list=CNIP address=116.68.176.0/21
 add list=CNIP address=116.69.0.0/16
 add list=CNIP address=116.70.0.0/17
 add list=CNIP address=116.76.0.0/14
-add list=CNIP address=116.85.0.0/17
-add list=CNIP address=116.85.128.0/18
-add list=CNIP address=116.85.192.0/19
-add list=CNIP address=116.85.224.0/20
-add list=CNIP address=116.85.240.0/21
-add list=CNIP address=116.85.248.0/23
-add list=CNIP address=116.85.250.0/24
-add list=CNIP address=116.85.252.0/22
+add list=CNIP address=116.85.0.0/16
 add list=CNIP address=116.89.144.0/20
 add list=CNIP address=116.90.80.0/20
 add list=CNIP address=116.90.184.0/21
