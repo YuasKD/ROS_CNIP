@@ -4794,6 +4794,7 @@ add list=CNIP address=144.48.208.0/21
 add list=CNIP address=144.52.0.0/16
 add list=CNIP address=144.79.4.0/23
 add list=CNIP address=144.79.10.0/23
+add list=CNIP address=144.79.54.0/23
 add list=CNIP address=144.123.0.0/16
 add list=CNIP address=144.178.30.48/28
 add list=CNIP address=144.255.0.0/16
@@ -4868,7 +4869,7 @@ add list=CNIP address=153.101.0.0/16
 add list=CNIP address=153.118.0.0/15
 add list=CNIP address=154.8.128.0/17
 add list=CNIP address=155.126.176.0/23
-add list=CNIP address=156.107.160.0/24
+add list=CNIP address=156.107.160.0/23
 add list=CNIP address=156.107.170.0/24
 add list=CNIP address=156.107.179.0/24
 add list=CNIP address=156.107.181.0/24
