@@ -4795,6 +4795,7 @@ add list=CNIP address=144.52.0.0/16
 add list=CNIP address=144.79.4.0/23
 add list=CNIP address=144.79.10.0/23
 add list=CNIP address=144.79.54.0/23
+add list=CNIP address=144.79.148.0/24
 add list=CNIP address=144.123.0.0/16
 add list=CNIP address=144.178.30.48/28
 add list=CNIP address=144.255.0.0/16
