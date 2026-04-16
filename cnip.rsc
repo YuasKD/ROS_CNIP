@@ -2894,7 +2894,6 @@ add list=CNIP address=103.209.210.0/23
 add list=CNIP address=103.209.216.0/22
 add list=CNIP address=103.210.96.0/22
 add list=CNIP address=103.210.156.0/22
-add list=CNIP address=103.210.160.0/22
 add list=CNIP address=103.210.164.0/22
 add list=CNIP address=103.210.168.0/21
 add list=CNIP address=103.210.176.0/20
