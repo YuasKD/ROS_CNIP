@@ -6656,8 +6656,7 @@ add list=CNIP address=203.171.0.0/22
 add list=CNIP address=203.171.208.0/24
 add list=CNIP address=203.171.224.0/20
 add list=CNIP address=203.174.4.0/24
-add list=CNIP address=203.174.6.0/24
-add list=CNIP address=203.174.7.0/24
+add list=CNIP address=203.174.6.0/23
 add list=CNIP address=203.174.96.0/19
 add list=CNIP address=203.175.128.0/19
 add list=CNIP address=203.175.192.0/18
