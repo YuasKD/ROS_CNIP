@@ -6733,8 +6733,7 @@ add list=CNIP address=204.55.160.0/24
 add list=CNIP address=204.79.135.24/32
 add list=CNIP address=210.2.0.0/23
 add list=CNIP address=210.2.2.0/24
-add list=CNIP address=210.2.5.0/24
-add list=CNIP address=210.2.6.0/23
+add list=CNIP address=210.2.4.0/22
 add list=CNIP address=210.2.8.0/21
 add list=CNIP address=210.2.16.0/22
 add list=CNIP address=210.2.20.0/23
