@@ -5455,9 +5455,10 @@ add list=CNIP address=202.52.143.0/24
 add list=CNIP address=202.53.140.0/24
 add list=CNIP address=202.53.143.0/24
 add list=CNIP address=202.57.192.0/22
-add list=CNIP address=202.57.196.0/23
-add list=CNIP address=202.57.201.0/24
+add list=CNIP address=202.57.196.0/22
+add list=CNIP address=202.57.200.0/23
 add list=CNIP address=202.57.202.0/23
+add list=CNIP address=202.57.204.0/23
 add list=CNIP address=202.57.206.0/23
 add list=CNIP address=202.57.212.0/22
 add list=CNIP address=202.57.216.0/22
