@@ -5213,6 +5213,7 @@ add list=CNIP address=192.11.26.0/24
 add list=CNIP address=192.11.39.0/24
 add list=CNIP address=192.11.236.0/24
 add list=CNIP address=192.23.191.0/24
+add list=CNIP address=192.51.172.0/23
 add list=CNIP address=192.55.46.0/23
 add list=CNIP address=192.55.68.0/22
 add list=CNIP address=192.56.99.0/24
