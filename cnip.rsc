@@ -1015,7 +1015,9 @@ add list=CNIP address=45.253.144.0/20
 add list=CNIP address=45.253.160.0/19
 add list=CNIP address=45.253.192.0/19
 add list=CNIP address=45.253.224.0/20
-add list=CNIP address=45.253.240.0/21
+add list=CNIP address=45.253.240.0/22
+add list=CNIP address=45.253.244.0/23
+add list=CNIP address=45.253.247.0/24
 add list=CNIP address=45.254.0.0/20
 add list=CNIP address=45.254.16.0/21
 add list=CNIP address=45.254.28.0/22
